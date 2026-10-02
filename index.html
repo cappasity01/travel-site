@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Авторские путешествия — Дмитрий Танеев</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f5f2ee;
+    color: #222;
+}
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+}
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.hero-content {
+    max-width: 600px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #c8a96a;
+    color: white;
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+    gap: 20px;
+}
+.grid-2 { grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); }
+.card {
+    background: white;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.footer {
+    text-align: center;
+    padding: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<section class="hero-content">
+<h1>Путешествия в места силы</h1>
+<p>Египет · Турция · скоро Непал и Индия</p>
+<a class="btn" href="#contact">Поехать со мной</a>
+</section>
+</div>
+
+<!-- ABOUT -->
+<section>
+<h2>Кто я</h2>
+<p>
+Меня зовут Дмитрий Танеев. Я создаю путешествия не ради галочек и достопримечательностей,
+а ради опыта, который остаётся внутри. Это возможность выйти из привычной жизни
+и увидеть мир и себя по-другому.
+</p>
+</section>
+
+<!-- FORMAT -->
+<section>
+<h2>Как проходят путешествия</h2>
+<div class="grid grid-2">
+<div class="card">Небольшие группы — до 10 человек</div>
+<div class="card">Живой формат без шаблонов</div>
+<div class="card">Баланс структуры и свободы</div>
+<div class="card">Глубокий опыт через места</div>
+</div>
+</section>
+
+<!-- DESTINATIONS -->
+<section>
+<h2>Направления</h2>
+
+<div class="grid grid-2">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549887534-4b6d8d0f1c05">
+<h3>Египет</h3>
+<p>Пустыни, храмы и древние цивилизации.</p>
+<p><b>от $900</b></p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1524230572899-a752b3835840">
+<h3>Турция</h3>
+<p>Горы, море и древние города.</p>
+<p><b>от $900</b></p>
+</div>
+
+</div>
+</section>
+
+<!-- TRIPS DETAIL -->
+<section>
+<h2>Как выглядит путешествие</h2>
+<p>
+Каждое путешествие — это не просто маршрут, а процесс.
+Мы двигаемся через места, общение и опыт.
+Есть структура, но остаётся пространство для живых решений.
+</p>
+</section>
+
+<!-- GALLERY -->
+<section>
+<h2>Атмосфера</h2>
+<div class="grid grid-2 gallery">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+</div>
+</section>
+
+<!-- BENEFITS -->
+<section>
+<h2>Что ты получишь</h2>
+<div class="grid grid-2">
+<div class="card">Смена состояния</div>
+<div class="card">Новые смыслы</div>
+<div class="card">Глубокий опыт</div>
+<div class="card">Живые знакомства</div>
+</div>
+</section>
+
+<!-- PRICE -->
+<section>
+<h2>Стоимость</h2>
+<p><b>от $900</b> / участие</p>
+<p>Напиши — пришлю детали по маршруту и датам.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Готов поехать?</h2>
+<p>Напиши мне в WhatsApp</p>
+<a class="btn" href="https://wa.me/79777309345">Написать</a>
+</section>
+
+<div class="footer">
+© Дмитрий Танеев
+</div>
+
+</body>
+</html>
