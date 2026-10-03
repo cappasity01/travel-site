@@ -3,58 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Авторские путешествия — Дмитрий Танеев</title>
+<title>Путешествия с Дмитрием Танеевым</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 body {
-    margin: 0;
+    margin:0;
     font-family: 'Inter', sans-serif;
-    background: #f5f2ee;
-    color: #222;
+    background:#f5f2ee;
+    color:#222;
+    line-height:1.6;
 }
+
 h1,h2,h3 {
-    font-family: 'Playfair Display', serif;
+    font-family:'Playfair Display', serif;
 }
+
 section {
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: auto;
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
 }
+
 .hero {
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
-    color: white;
-    display: flex;
-    align-items: center;
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover;
+    display:flex;
+    align-items:center;
+    color:white;
 }
-.hero-content {
-    max-width: 600px;
+
+.hero h1 {
+    font-size:48px;
 }
+
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: #c8a96a;
-    color: white;
-    text-decoration: none;
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#c8a96a;
+    color:white;
+    text-decoration:none;
 }
+
 .grid {
-    display: grid;
-    gap: 20px;
+    display:grid;
+    gap:20px;
 }
-.grid-2 { grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); }
+
+.grid-2 {
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+
 .card {
-    background: white;
-    padding: 20px;
+    background:white;
+    padding:20px;
 }
-.gallery img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+
+img {
+    width:100%;
+    border-radius:10px;
 }
+
+.dark {
+    background:#111;
+    color:white;
+}
+
 .footer {
-    text-align: center;
-    padding: 40px;
+    text-align:center;
+    padding:40px;
 }
 </style>
 </head>
@@ -63,9 +82,9 @@ section {
 
 <!-- HERO -->
 <div class="hero">
-<section class="hero-content">
-<h1>Путешествия в места силы</h1>
-<p>Египет · Турция · скоро Непал и Индия</p>
+<section>
+<h1>Авторские путешествия в места силы</h1>
+<p>Египет · Турция · исследования · ретриты</p>
 <a class="btn" href="#contact">Поехать со мной</a>
 </section>
 </div>
@@ -73,91 +92,169 @@ section {
 <!-- ABOUT -->
 <section>
 <h2>Кто я</h2>
+
+<div class="grid grid-2">
+
+<div>
+<img src="photo1.jpg">
+</div>
+
+<div>
+<p>Меня зовут Дмитрий Танеев.</p>
+
 <p>
-Меня зовут Дмитрий Танеев. Я создаю путешествия не ради галочек и достопримечательностей,
-а ради опыта, который остаётся внутри. Это возможность выйти из привычной жизни
-и увидеть мир и себя по-другому.
+Я создаю путешествия в места,
+где чувствуется глубина —
+древние цивилизации, природа, пространства,
+которые меняют восприятие.
 </p>
+
+<p>
+Это не туризм.
+Это способ выйти из привычной жизни
+и прожить другой опыт.
+</p>
+
+<p>
+Через путешествия я создаю среду,
+где это можно почувствовать лично.
+</p>
+</div>
+
+</div>
 </section>
 
 <!-- FORMAT -->
-<section>
-<h2>Как проходят путешествия</h2>
+<section class="dark">
+<h2>Формат путешествий</h2>
+
 <div class="grid grid-2">
-<div class="card">Небольшие группы — до 10 человек</div>
-<div class="card">Живой формат без шаблонов</div>
-<div class="card">Баланс структуры и свободы</div>
-<div class="card">Глубокий опыт через места</div>
+<div>Небольшие группы (6–10 человек)</div>
+<div>Живой маршрут, не жёсткая программа</div>
+<div>Баланс свободы и структуры</div>
+<div>Фокус на опыте, а не на “галочках”</div>
 </div>
 </section>
 
-<!-- DESTINATIONS -->
+<!-- EGYPT -->
 <section>
-<h2>Направления</h2>
+<h2>Египет · Экспедиция</h2>
 
-<div class="grid grid-2">
+<img src="photo2.jpg">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1549887534-4b6d8d0f1c05">
-<h3>Египет</h3>
-<p>Пустыни, храмы и древние цивилизации.</p>
-<p><b>от $900</b></p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1524230572899-a752b3835840">
-<h3>Турция</h3>
-<p>Горы, море и древние города.</p>
-<p><b>от $900</b></p>
-</div>
-
-</div>
-</section>
-
-<!-- TRIPS DETAIL -->
-<section>
-<h2>Как выглядит путешествие</h2>
 <p>
-Каждое путешествие — это не просто маршрут, а процесс.
-Мы двигаемся через места, общение и опыт.
-Есть структура, но остаётся пространство для живых решений.
+Путешествие в неизвестный Древний Египет —
+в места, куда обычно не доезжают.
 </p>
+
+<p>
+📍 14 — 29 ноября
+</p>
+
+<h3>Две части</h3>
+
+<ul>
+<li>Асуан, Абу Симбел, юг Египта</li>
+<li>Саккара, Дахшур, пустыни и Файюм</li>
+</ul>
+
+<p>
+Это не экскурсия.
+Это исследование через личный опыт.
+</p>
+
+<p><b>Стоимость:</b> себестоимость + $25 / день</p>
+
+<a class="btn" href="https://wa.me/79777309345">Написать</a>
+
+</section>
+
+<!-- TURKEY -->
+<section class="dark">
+<h2>Турция · Путешествие к суфиям</h2>
+
+<p>
+Конья. Фестиваль Руми.
+Путь сердца через музыку, встречи и атмосферу.
+</p>
+
+<p>
+📍 12 — 20 декабря
+</p>
+
+<ul>
+<li>Мавзолей Руми</li>
+<li>Суфийские встречи</li>
+<li>Музыка и танец</li>
+<li>Средиземное море после фестиваля</li>
+</ul>
+
+<p><b>Стоимость:</b> себестоимость + $150</p>
+
+<a class="btn" href="https://wa.me/79777309345">Написать</a>
+
 </section>
 
 <!-- GALLERY -->
 <section>
-<h2>Атмосфера</h2>
-<div class="grid grid-2 gallery">
+<h2>Атмосфера путешествий</h2>
+
+<div class="grid grid-2">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
 <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
 <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
 </div>
+
 </section>
 
-<!-- BENEFITS -->
-<section>
-<h2>Что ты получишь</h2>
+<!-- SCHEDULE -->
+<section class="dark">
+<h2>Ближайшие путешествия</h2>
+
 <div class="grid grid-2">
-<div class="card">Смена состояния</div>
-<div class="card">Новые смыслы</div>
-<div class="card">Глубокий опыт</div>
-<div class="card">Живые знакомства</div>
-</div>
-</section>
 
-<!-- PRICE -->
-<section>
-<h2>Стоимость</h2>
-<p><b>от $900</b> / участие</p>
-<p>Напиши — пришлю детали по маршруту и датам.</p>
+<div class="card">
+Египет · 14–29 ноября
+</div>
+
+<div class="card">
+Турция · 12–20 декабря
+</div>
+
+<div class="card">
+Египет ретрит · март
+</div>
+
+<div class="card">
+Синай · апрель
+</div>
+
+<div class="card">
+Турция весна · май
+</div>
+
+<div class="card">
+Чирали · июнь
+</div>
+
+</div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Готов поехать?</h2>
-<p>Напиши мне в WhatsApp</p>
-<a class="btn" href="https://wa.me/79777309345">Написать</a>
+<h2>Поехать со мной</h2>
+
+<p>
+Если тебе откликается — напиши.
+Я пришлю детали и помогу выбрать формат.
+</p>
+
+<a class="btn" href="https://wa.me/79777309345">
+Написать в WhatsApp
+</a>
+
 </section>
 
 <div class="footer">
